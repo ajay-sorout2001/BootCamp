@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College Registration Form</title>
+  <style>
+    body { font-family: Arial; display: flex; justify-content: center; }
+    form { border: 1px solid #000; padding: 20px; width: 350px; }
+    label { display: block; margin-top: 10px; }
+    input, select, textarea { width: 100%; margin-top: 5px; }
+    .inline { display: inline-block; margin-right: 10px; }
+  </style>
+</head>
+<body>
+  <form>
+    <h2>🎓 College Registration Form</h2>
+
+    <label>Name:<input type="text" placeholder="Full name"></label>
+    <label>Email:<input type="email" placeholder="College email"></label>
+    <label>Roll No:<input type="text" placeholder="Roll number"></label>
+    <label>Phone:<input type="tel" placeholder="Phone number"></label>
+    <label>Address:<textarea rows="2" placeholder="Address"></textarea></label>
+
+    <label>Course:
+      <select>
+        <option>--Select--</option>
+        <option>MCA</option><option>BCA</option>
+        <option>B.Tech</option><option>MBA</option>
+      </select>
+    </label>
+
+    <label>Department:<input type="text" placeholder="e.g., CS, Management"></label>
+    <label>Year:
+      <select>
+        <option>--Year--</option>
+        <option>1st</option><option>2nd</option>
+        <option>3rd</option><option>4th</option>
+      </select>
+    </label>
+
+    <label>Gender:</label>
+    <label class="inline"><input type="radio" name="gender"> Male</label>
+    <label class="inline"><input type="radio" name="gender"> Female</label>
+    <label class="inline"><input type="radio" name="gender"> Other</label>
+
+    <label>Interests:</label>
+    <label><input type="checkbox"> Coding</label>
+    <label><input type="checkbox"> Sports</label>
+    <label><input type="checkbox"> Music</label>
+    <label><input type="checkbox"> Reading</label>
+
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
