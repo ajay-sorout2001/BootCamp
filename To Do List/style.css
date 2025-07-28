@@ -1,0 +1,82 @@
+body {
+  background-color: #1e1e1e;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.todo-container {
+  background: #111;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  color: orange;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: orange;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: darkorange;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #222;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li span {
+  cursor: pointer;
+  background: red;
+  padding: 4px 10px;
+  border-radius: 5px;
+  color: white;
+}
