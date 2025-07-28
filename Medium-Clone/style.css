@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Inter', sans-serif;
+}
+
+.wrapper {
+  min-height: 100vh;
+}
+
+.landing-page {
+  background-color: rgb(91, 187, 192);
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(40, 158, 156);
+  border-bottom: 1px solid black;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.navlist {
+  display: flex;
+  gap: 1.5rem;
+  list-style-type: none;
+  font-size: 1.1rem;
+  align-items: center;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-text a:hover {
+  color: rgb(70, 168, 255);
+}
+
+.nav-text button {
+  background-color: rgb(160, 34, 34);
+  color: rgb(122, 36, 36);
+  padding: 0.8rem 2rem;
+  border-radius: 40px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-text button:hover {
+  background-color: #201c1c;
+}
+
+.curious {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 8rem 3rem 2rem;
+}
+
+#stay-curious {
+  font-size: 7rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.landing-para {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.start-reading {
+  background-color: rgb(135, 155, 156);
+  color: rgb(14, 131, 203);
+  padding: 0.8rem 3rem;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.trending-page {
+  padding: 2rem 4rem;
+  background-color: #759b99;
+}
+
+.trending-medim {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.trending-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+}
+
+.card-no {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(162, 97, 97);
+  padding-right: 1.2rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.heading {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.discription {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.scrolling-page {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 6rem 4rem;
+  border-top: 1px solid rgb(97, 55, 55);
+}
+
+.scrolling-cards {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 2rem;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+}
+
+.scroll-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  flex: 1;
+}
+
+.scroll-head {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.date button {
+  background-color: rgb(107, 99, 99);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.card-image {
+  height: 12rem;
+  aspect-ratio: 3/2;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  flex-shrink: 0;
+}
+
+/* Image backgrounds */
+.img1 { background-image: url(https://miro.medium.com/v2/resize:fill:300:201/1*3IcTfY6F7SFA2ys0aufuEg.jpeg); }
+.img2 { background-image: url(https://miro.medium.com/v2/resize:fill:300:201/1*cLczw913nHBiE4zpRn-QGA.png); }
+.img3 { background-image: url(https://miro.medium.com/v2/resize:fill:300:201/1*NeAIOFBAuB5T33T-btTlyQ.jpeg); }
+.img4 { background-image: url(https://miro.medium.com/v2/resize:fill:300:201/0*cpo4BkH-JSLZopKm.png); }
+.img5 { background-image: url(https://miro.medium.com/v2/resize:fill:300:201/1*C44Wg-1vd1TerVeCqu4MXw.jpeg); }
+.img6 { background-image: url(https://miro.medium.com/v2/resize:fill:300:201/1*iokjTUKJx_PsCi1qyGz9VQ.jpeg); }
+.img7 { background-image: url(https://miro.medium.com/v2/resize:fill:300:201/0*P8D7E0DvyYWRyaYR.jpg); }
+.img8 { background-image: url(https://miro.medium.com/v2/resize:fill:300:201/1*iC_bsufbnV9p1p6dCeevZQ.jpeg); }
+
+.static-content {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: sticky;
+  top: 110px;
+  height: fit-content;
+}
+
+.topics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.topic {
+  background-color: rgb(122, 139, 150);
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.function-list {
+  display: grid;color: #a53434;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
